@@ -169,6 +169,9 @@ section.main-container{
    
 }
 */
+.right-container{
+    background-color: green;
+}
 .card-header .answer_count{
     background-color: red;
     padding: 1%;
