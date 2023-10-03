@@ -13,5 +13,5 @@ With the template layout I have given in my html is how the page will look  like
 <p>In view of that everyone should just choose a section and work on it after they push then i'll merge until we are done</p>
 <p>Media queries and detailed designs will come later but let's get a working page first</p>
 
-# Added local bootstrap
+# local bootstrap
 You can feel free to use the local version of the boostrap files as opposed to the cdn in case you don't have an internet connection
