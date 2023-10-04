@@ -1,4 +1,6 @@
 # queryStack_Frontend
+Please alway update your forks
+Then pull anytime you see new changes before you make your own
 I'll create a branch for each of you please wait
 
 #
