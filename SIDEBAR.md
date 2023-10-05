@@ -79,5 +79,3 @@ The sidebar is designed to be responsive. For screen sizes less than 768px, the 
     }
 }
 ```
-
-I hope you found this README helpful in understanding the QueryStack Sidebar project. If you have any questions, please feel free to ask!
