@@ -1,0 +1,78 @@
+/* Hello, This file is for the designs for the sidebar.
+Everything concerning designs or even animations should be here. */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  
+    --black-200: #020202;
+    --black-300: #333333;
+    --black-400: #1f1e31;
+    --black-500: #555555;
+    --gray-100: #888888;
+
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+.sidebar__filter-btn {
+  padding: 0px 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 46px;
+
+  font-size: 16px;
+  font-weight: 300px;
+  line-height: 25px;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--black-500);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar__filter-btn.active {
+    background: var(--gray-100);
+    color: #fff;
+  }
+  
+  .sidebar__filter-btn:hover {
+    background: #eee;
+    color: var(--black-400);
+    transition: background 0.45s 0.04s;
+  }
+
+  .sidebar__card-info h4 {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--playfair-display);
+    opacity: 0.95;
+  }
+
+  .sidebar__card-info h4:hover {
+    color: #0074cc;
+    transition: color 0.5s;
+  }
+
+  .sidebar__card-info p {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.5;
+  }
