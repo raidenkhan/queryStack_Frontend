@@ -134,21 +134,22 @@
 }
 
 @media screen and (max-width: 986px) {
-  .sidebar__container {
+  .left_side_bar {
       position: absolute;
       overflow-x: hidden;
       box-sizing: border-box;
       transform: translateX(-100%);
-      display: none;
       left: 0;
       min-width:30% ;
       z-index: 1000;
       background: var(--gray-50);
-       transition: 5s ease-in;
+      display: none;
+    
   }
-  .sidebar__container.show{
+  .left_side_bar.show{
     display: block;
     transform: translateX(0);
+    transition: transform 2ms ease-in;
     /* transition: all 2s ease-in-out; */
    
   }
