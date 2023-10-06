@@ -136,8 +136,9 @@
   gap: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 986px) {
   .sidebar__container {
+    background-color: red;
       position: static;
       width: 100%;
       overflow-x: hidden;
