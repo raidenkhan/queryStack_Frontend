@@ -3,21 +3,20 @@ This is the look and feel of the sidebar, from flex to anything to improve visua
 
 @import url("sidebar_style.css");
 
-body {
-    margin: 0;
-}
+
 
 .sidebar__container {
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: static;
     padding: 1em 2.5em;
-    top: 0;
-    left: 0;
-    width: 200px;
+    /* margin: 1em; */
+    /* top: 5rem;
+    left: 0; */
+    width: 300px;
     height: 100%;
     background-color: #eeeeee18;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     overflow: hidden;
 }

@@ -19,11 +19,6 @@ Everything concerning designs or even animations should be here. */
 
   }
 
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
   
 .sidebar__filter-btn {
   padding: 0px 15px;
@@ -31,7 +26,7 @@ Everything concerning designs or even animations should be here. */
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
