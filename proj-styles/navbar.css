@@ -5,6 +5,7 @@ nav{
     min-width: 100%;
     z-index: 999;
     top: 0;
+    left: 0;
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-top: 3px solid var(--bg-main);
