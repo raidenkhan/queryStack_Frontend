@@ -1,7 +1,7 @@
 
 @import url("../proj-styles/navbar.css");
 @import url("../proj-styles/right-container.css");
-@import url("../proj-styles/sidebar/css/sidebar.css");
+@import url("../proj-styles/left-container.css");
 @import url("../proj-styles/main-container.css");
 
 
@@ -18,15 +18,16 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    scroll-behavior: smooth;
 }
 
 
-
-section{
-    /* min-height: 100vh; */
-
+.container#main{
+    max-width: 1264px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
 }
+
 
 
 
