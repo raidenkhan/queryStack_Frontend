@@ -9,7 +9,7 @@
     --black-400: #1f1e31;
     --black-500: #555555;
     --gray-100: #dfdcdc;
-
+  --gray-50:#fffdfd;
   }
 
 * {
@@ -79,12 +79,9 @@
 .sidebar__container {
   display: flex;
   flex-direction: column;
-  /* position: static; */
+
   padding: 1em 1.5em;
-  /* margin: 1em; */
-  /* top: 5rem;
-  left: 0; */
-  /* width: 300px; */
+
   height: 80vh;
   background-color: #eeeeee18;
  overflow-y: scroll;
@@ -138,13 +135,25 @@
 
 @media screen and (max-width: 986px) {
   .sidebar__container {
-    background-color: red;
-      position: static;
-      width: 100%;
+      position: absolute;
       overflow-x: hidden;
       box-sizing: border-box;
-  }
-  .sidebar__card-info {
+      transform: translateX(-100%);
       display: none;
+      left: 0;
+      min-width:30% ;
+      z-index: 1000;
+      background: var(--gray-50);
+       transition: 5s ease-in;
+  }
+  .sidebar__container.show{
+    display: block;
+    transform: translateX(0);
+    /* transition: all 2s ease-in-out; */
+   
+  }
+  
+  .sidebar__card-info {
+      /* display: none; */
   }
 }
