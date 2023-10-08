@@ -28,9 +28,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-.middle_div{
-    /* background: yellow; */
-}
 
 .card-header .answer_count{
  
@@ -38,18 +35,6 @@
 }
 .card_technologies{
     gap: 1.2em;
-}
-.card .btn.tech{
-    min-width: fit-content;
-    padding: .2em;
-    border-radius: 6px;
-background: linear-gradient(0deg, #D3C9AE 0%, #D3C9AE 100%), #D9D9D9;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-color: #FFF;
-text-align: center;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-display: flex;
-justify-content: center;
 }
 .card .user_info{
     margin-top: auto;
@@ -61,7 +46,7 @@ justify-content: center;
     min-width: max-content;
 }
 .content-section{
-    margin-top: 8em;
+    margin-top: 5rem;
 }
 
 .wrapper-middle{
@@ -209,20 +194,10 @@ justify-content: center;
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:968px){
+   
+   .col-md-10.main-container{
+    width: 100%;
+   }
+      
+  }

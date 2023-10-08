@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryStack</title>
+     <!-- link to google icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <!-- link to js file -->
+     <script src="./jsfiles/script.js" defer></script>
+     <script src="./jsfiles/navbar.js" defer></script>
+     <!-- link to css file -->
+     <link rel="stylesheet" href="./proj-styles/style.css">
+     <link rel="stylesheet" href="./proj-styles/navbar.css">
+</head>
+<body>
+    
+    <div class="super-container">
+      <header>
+          <div class="nav-container">
+              <nav>
+                  <div class="nav-brand">
+                      <div class="hamburger-menu-container">
+          
+                          <div class="hamburger-menu">
+                              <div class="line"></div>
+                              <div class="line"></div>
+                              <div class="line"></div>
+                          </div>
+                          <div class="nav-dropdown-menu">
+                              <a href="#" class="current-link">Home</a>
+                              <h5>Public</h5>
+                              <ul class="nav-ul">
+                                  <li class="nav-item">
+                                      <i class="fas fa-globe-europe"></i>
+                                      <a href="#" class="nav-link">Stack Overflow</a>
+                                  </li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Tags</a></li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+                              </ul>
+                              <h5>Find a Job</h5>
+                              <ul class="nav-ul">
+                                  <li class="nav-item"><a href="#" class="nav-link">Jobs</a></li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Companies</a></li>
+                              </ul>
+                              <h5>Teams <a href="#" >What's this ?</a></h5>
+                              <a href="#" class="nav-link">
+                                  <i class="fas fa-briefcase"></i>
+                                  <span>Free 30 Day Trial</span>
+                              </a>
+                          </div>
+                      </div>
+          
+                      <a href="#" class="nav-icon">
+                          <i class="fab fa-stack-overflow"></i>
+                          <div class="nav-icon-text">Query<span class="nav-bold-text">Stack</span>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="nav-base-links">
+                      <ul>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Products</a></li>
+                          <li><a href="#">For Teams</a></li>
+                      </ul>
+                  </div>
+                  <div class="nav-search">
+                      <div class="search-container">
+                          <i class="fas fa-search"></i>
+                          <input type="text" id="" placeholder="Search...">
+                          <span class="material-symbols-outlined">search</span>
+                      </div>
+                  </div>
+                  <div class="nav-right-buttons">
+                      <div class="search-btn">
+                          <i class="fas fa-search"></i>
+                      </div>
+          
+          
+                      <a href="#" class="btn btn-login">Log in</a>
+                      <a href="#" class="btn btn-register">Sign up</a>
+                  </div>
+              </nav>
+          </div>
+        </header>
+    
+        <div class="wrapper-container">  
+            <div class="left-side-bar"> 
+                <!-- left side-bar goes here -->
+                <aside class="sidebar__container">
+
+                    <!-- Top part of the sidebar  -->
+                    <div id="sidebar">
+                        <!-- This top part has been divided into 3 parts for better layout and spacing  -->
+            
+                        <!-- First part  -->
+                        <ul class="sidebar__menu-first item-flex">
+                            <li class="sidebar__filter-btn active">
+                                <i class="fa-solid fa-globe"></i>
+                                <a href="#">Everything</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a href="#">Productivity</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <a href="#">Career Advice</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-brain"></i>
+                                <a href="#">AI/ML</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-brands fa-sourcetree"></i>
+                                <a href="#">Open Source</a>
+                            </li>
+                        </ul>
+            
+                        <hr>
+                        <!-- Second part  -->
+                        <ul class="sidebar__menu-second item-flex">
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-building"></i>
+                                <a href="#">Company</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-cube"></i>
+                                <a href="#">Releases</a>
+                            </li>
+                        </ul>
+            
+                        <hr>
+                        <!-- Third part  -->
+                        <ul class="sidebar__menu-third item-flex">
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-podcast"></i>
+                                <a href="#">Podcast</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <a href="#">Newsletter</a>
+                            </li>
+                        </ul>
+                      </div>
+            
+                    <hr>
+                    <br>
+            
+                     <!-- This part is for news feed, or announcments  -->
+                    <article class="sidebar__card-info">
+                       <h4 class="sidebar__card-title ">Products</h4>
+            
+                       <article class="sidebar__card-sub1">
+                            <h4 class="sidebar__card-title1">QueryStack for Teams</h5>
+                            <p>Capture, share, & collaborate on knowledge internally.</p>
+                       </article>
+            
+                       <article class="sidebar__card-sub2">
+                        <h4 class="sidebar__card-title2">MATBOOT for Teams</h5>
+                        <p>Capture, share, & collaborate on knowledge internally.</p>
+                       </article>
+            
+                       <article class="sidebar__card-sub2">
+                        <h4 class="sidebar__card-title2">Frontend for Teams</h5>
+                        <p>Capture, share, & collaborate on knowledge internally.</p>
+                        </article>
+            
+                    </article>
+                </aside>
+            </div>
+
+            <main class="main-section">
+                <!-- main section goes here -->
+                <div class="wrapper-middle">
+                    <div class="top-questions">
+                      Top Questions
+                    </div>
+
+                    <div id="upperLinksContainer">
+                      <div class="sec1">
+                        <a href=""  class="active nav-links">
+                          Interesting
+                      </a>
+                      <a href="" class="nav-links">
+                        Bountied
+                      </a>
+                      <a href="" class="nav-links">
+                        Hot
+                      </a>
+                      <a href="" class="nav-links">
+                        Week
+                      </a>
+                      <a href="" class="nav-links">
+                        Month
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="blue-button">
+                        Ask Question
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="question-wrapper">
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                        
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                        
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                        
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+
+
+                  </div>
+                  </div>
+            </main>
+
+            <div class="right-side-bar">
+                <!-- right sidebar goes here -->
+                <div class="">
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <!-- footer goes here -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis tenetur laboriosam voluptas ut repellendus porro aliquid, quia ab facilis unde optio quibusdam. Qui consectetur labore error cupiditate laboriosam nobis necessitatibus, esse cum eos explicabo ipsa asperiores. Laborum ea aliquid, delectus debitis soluta libero magni tempore provident, nesciunt eum reprehenderit, pariatur dolorum eveniet molestiae veritatis architecto asperiores accusantium ut. Officiis debitis doloribus sequi, expedita, voluptatum quidem ex ipsum hic veniam, similique enim ipsa odit magnam voluptate autem quisquam natus. Non mollitia nemo labore! Id, voluptates. Earum, rem ducimus temporibus facere modi, necessitatibus fugit ut error dolor sunt sint adipisci ipsum voluptates at fuga cumque pariatur ad? Accusamus assumenda velit doloribus laboriosam eum similique, harum facilis quo expedita tempora et ullam iure eveniet deleniti ipsum atque a exercitationem aspernatur repudiandae incidunt rem aliquid itaque saepe. Consectetur placeat vitae adipisci ducimus voluptatibus, tenetur nobis veniam, nemo ipsa quidem accusantium dolores sapiente amet? Quam, soluta. Fugiat, libero ab voluptate necessitatibus distinctio rerum fugit perspiciatis iure dolorem quis illo nesciunt corrupti, repellat aut ratione harum nihil explicabo architecto sunt repudiandae? Explicabo voluptas esse sit vero numquam voluptatibus est, aspernatur doloribus deserunt deleniti maxime quia unde harum minus consequuntur nihil omnis aliquid doloremque enim illo ducimus beatae aliquam eligendi autem. Iste laborum libero accusantium aperiam vel aspernatur explicabo corporis! Autem, minima ea cumque magnam nulla harum ut? Mollitia ea omnis, molestiae quis nihil earum iure ipsam aliquam. Eaque, dolor. Harum expedita provident quidem pariatur quas illum at a similique nobis culpa exercitationem dolore vel, deleniti hic, suscipit laudantium reiciendis illo saepe aut! Iusto dolorem alias explicabo inventore totam illo commodi, mollitia non voluptatibus esse amet necessitatibus voluptatum autem consectetur neque eos voluptatem optio quis modi ratione earum deleniti illum minus natus? Nam nesciunt excepturi porro incidunt magnam odio eaque, dolores, sapiente temporibus quasi officiis quo.
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -21,10 +21,11 @@
 }
 
 
-
-section{
-    /* min-height: 100vh; */
-
+.container#main{
+    max-width: 1264px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
 }
 
 
@@ -50,12 +51,6 @@ section{
    .left_div{
     min-width: max-content;
    }
-   section .container-lg{
-    
-    border: 3px solid green;
-    margin-inline: 0;
-    min-width: 100%;
-   }
 
 
     /* Apply this style when the screen width is 992px or less */
@@ -65,10 +60,6 @@ section{
        
         
      
-    }
-    .middle-right-container .card{
-        width: 100% !important;
-        
     }
     .middle_div.col-md-8{
         width: 100%;
