@@ -46,9 +46,7 @@
    .middle_div{
     padding: 0;
    }
-   .wrapper{
-    min-width: 100%;
-   }
+
    .left_div{
     min-width: max-content;
    }
@@ -57,20 +55,27 @@
     /* Apply this style when the screen width is 992px or less */
     .middle-right-container {
         flex-direction: column; /* Stack columns vertically */
-        align-items: center; 
-       
         
-     
     }
+   .row.middle-right-container{
+    align-items: start;
+    
+   } 
+   .middle_div{
+    min-width: 100%!important;
 
-    .middle_div.col-md-8{
-        width: 100%;
-    }
+   }
+   .right-container{
+    min-width:100%!important;
+   }
+
+  
 
     .middle-right-container .card .card-body
     {
         display: flex;
         flex-direction: column;
     }
+
 
 }

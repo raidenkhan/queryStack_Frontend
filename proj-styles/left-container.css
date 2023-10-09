@@ -82,24 +82,24 @@
 
   padding: 1em 1.5em;
 
-  height: 80vh;
-  background-color: #eeeeee18;
+  max-height: 100vh;
+  background-color: #c9c4c418;
  overflow-y: scroll;
   cursor: pointer;
  
 }
 .sidebar__container::-webkit-scrollbar{
   /* background-color: red; */
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(155, 150, 150, 0.3); 
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  width: 4px;
+  width: 8px;
 }
 .sidebar__container::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgb(209, 199, 199) ;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  background: rgb(182, 177, 177) ;
+  -webkit-box-shadow: inset 0 0 6px rgba(90, 86, 86, 0.5); 
 }
 
 .sidebar__container hr {
