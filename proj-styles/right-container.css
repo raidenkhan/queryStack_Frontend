@@ -1,0 +1,9 @@
+.right-container{
+  background-color: green;
+}
+@media screen and (max-width:968px){
+  .right-container{
+    width: 100%;
+  }
+    
+}
