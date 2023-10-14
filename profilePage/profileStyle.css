@@ -1,0 +1,246 @@
+@import url(./../hompage/style.css);
+.wrapper{
+  
+    grid-template-columns: 20% 80%;
+  
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+main,aside.right{
+    padding: 36px 24px;
+    padding-right: min(2%,24px);
+}
+aside.right{
+    background:var(--cream);
+    padding-left: min(2%,24px);
+}
+
+
+
+/* PROFILE CONTAINER STYLING */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+}
+.profile-container .main-profile .user-pic{
+    aspect-ratio:  1;
+    height: 100px;
+    
+}
+.user-pic img{
+    background-color: red;
+    aspect-ratio: 1;
+    height: 90px;
+    border-radius: 50%;
+    background-position:center;
+    background-size: cover;
+}
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    max-width: 410px;
+    background: var(--white);
+    padding: min(4%,2em);
+    border-radius: 2em;
+}
+.profile-container .main-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+}
+.main-profile .user_course{
+    font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+color: var(--rich-black-750);
+}
+.profile-container .main-profile h1{
+font-family: Poppins;
+font-size: 28px;
+    
+}
+.profile-container .user_contact_info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.profile-container .user_contact_info >*{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.profile-container .user_contact_info >* p:first-of-type{
+    color: var(--rich-black-750);
+}
+.action_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6em;
+}
+
+.profile-container .action_btns button{
+    padding: .7em;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 12px;
+width: 8em;
+transition: all 200ms;
+
+
+
+}
+.edit_profile{
+   
+    color: var(--blue);
+    
+    border: 1px solid var(--blue);
+    background-color: inherit;
+   
+
+}
+.edit_profile:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+.action_btns .signOut{
+    background-color:var(--red);
+    color: var(--white);
+    border: none;
+}
+.action_btns button:hover{
+    cursor: pointer;
+}
+
+/* RIGHT WRAPPER */
+.right{
+    display: block;
+}
+.right-wrapper h2{
+    color: var(--rich-black, #0E131F);
+
+    margin-left: 3em;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bio_details{
+    background-color: var(--white);
+    padding: 50px 0 24px 48px;
+    border-radius: .7em;
+    margin-top: 2em;
+    font-family: Plus Jakarta Sans,sans-serif;
+    align-items: center;
+    overflow: hidden;
+  
+}
+
+
+
+/* QUERIES TO OVERWRITE ELVIS' STYLE */
+@media screen and (min-width: 1000px){
+.wrapper{
+    padding-right: 0;
+
+}
+}
+
+@media screen and (min-width: 1000px){
+.right {
+    display: flex;
+    padding: 1rem;
+  
+  
+}
+}
+/* MEDIUM SCREEN MEDIA QUERIES */
+@media screen and (max-width:1200px) {
+    .wrapper{
+        grid-template-columns: 30% 70%;
+    
+    }
+     .main-content{
+        grid-template-columns: 100%;
+    } 
+    main{
+       display: flex;
+       justify-content: center;
+    
+    }
+    .profile-container{
+       min-width: 90%;
+    }
+    .profile-container .user_contact_info >*{
+        flex-direction: row;
+    }
+    .action_btns{
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-between;
+    }
+    .profile-container .user_contact_info >* p:first-of-type{
+        width: 4em;
+    }
+    
+    
+}
+/* SMALL SCREEN MEDIA QUERIES */
+@media screen and (max-width:699px) {
+  
+   
+    main{
+        padding-inline: 0px;
+        padding-bottom: 1em;
+       
+     
+    }
+    main .user-pic{
+        position: absolute;
+        z-index: 5;
+        top: 80px;
+       
+        
+    }
+    main .user-pic img{
+        border: 6px solid var(--cream);
+    }
+    nav{
+        z-index: 1000;
+    }
+    .profile-container{
+       min-width: 100%;
+        border-radius: 0;
+    }
+    .profile-container h1{
+        font-size: 20px!important;
+        
+    }
+    .profile-container .main-profile{
+        margin-top: 4em;
+    }
+    aside.right{
+        padding-top: 1em;
+       padding-inline: 0;
+        
+    }
+    .user_posts{
+        margin-top: 2em;
+    }
+    
+}
