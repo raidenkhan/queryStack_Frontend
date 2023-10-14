@@ -3,331 +3,584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./proj-styles/style.css">
+    <title>QueryStack</title>
+     <!-- link to google icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- link to js file -->
+     <script src="./js/all.js" defer></script>
 
-    <!-- link to google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="./jsfiles/script.js" defer></script>
+     <!-- link to css file -->
+     <link rel="stylesheet" href="./proj-styles/style.css">
+     <link rel="stylesheet" href="./proj-styles/navbar.css">
+     <link rel="stylesheet" href="./proj-styles/footer.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid wrapper ">
-          <a class="navbar-brand" href="#">QueryStack</a>
-          <button class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex search" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <div class="action-btns">
-                <button class="btn log-in">Login</button>
-                <button class="btn signup">Sign Up</button>
-            </div>
+    
+    <div class="super-container">
+      <header>
+          <div class="nav-container">
+              <nav>
+                  <div class="nav-brand">
+                      <div class="hamburger-menu-container">
+          
+                          <div class="hamburger-menu">
+                              <div class="line"></div>
+                              <div class="line"></div>
+                              <div class="line"></div>
+                          </div>
+                          <div class="nav-dropdown-menu">
+                              <a href="#" class="current-link">Home</a>
+                              <h5>Public</h5>
+                              <ul class="nav-ul">
+                                  <li class="nav-item">
+                                      <i class="fas fa-globe-europe"></i>
+                                      <a href="#" class="nav-link">Query Stack</a>
+                                  </li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Tags</a></li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+                              </ul>
+                              <h5>Find a Job</h5>
+                              <ul class="nav-ul">
+                                  <li class="nav-item"><a href="#" class="nav-link">Jobs</a></li>
+                                  <li class="nav-item"><a href="#" class="nav-link">Companies</a></li>
+                              </ul>
+                              <h5>Teams <a href="#" >What's this ?</a></h5>
+                              <a href="#" class="nav-link">
+                                  <i class="fas fa-briefcase"></i>
+                                  <span>Free 30 Day Trial</span>
+                              </a>
+                          </div>
+                      </div>
+          
+                      <a href="#" class="nav-icon">
+                          <i class="fab fa-stack-overflow"></i>
+                          <div class="nav-icon-text">Query<span class="nav-bold-text">Stack</span>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="nav-base-links">
+                      <ul>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Products</a></li>
+                          <li><a href="#">For Teams</a></li>
+                      </ul>
+                  </div>
+                  <div class="nav-search">
+                      <div class="search-container">
+                          <!-- <i class="fas fa-search"></i> -->
+                          <input type="text" id="" placeholder="Search...">
+                          <span class="material-symbols-outlined">search</span>
+                      </div>
+                  </div>
+                  <div class="nav-right-buttons">
+                      <div class="search-btn ">
+                          <i class="fas fa-search"></i>
+                      </div>
+          
+          
+                      <a href="#" class="btn btn-login">Log in</a>
+                      <a href="#" class="btn btn-register">Sign up</a>
+                  </div>
+              </nav>
           </div>
-        </div>
-      </nav>
-      
-      <section class="content-section">
-        
-      <div class="container-lg custom-bg">
-        <div class="row">
-            <div class="left_side_bar col-md-2 col-sm-6 col-12 p-0" >
-                <!-- Left Division (Small) -->
+        </header>
+    
+        <div class="wrapper-container">  
+            <div class="left-side-bar"> 
+                <!-- left side-bar goes here -->
                 <aside class="sidebar__container">
 
-                  <!-- Top part of the sidebar  -->
-                  <div id="sidebar">
-                      <!-- This top part has been divided into 3 parts for better layout and spacing  -->
-          
-                      <!-- First part  -->
-                      <ul class="sidebar__menu-first item-flex">
-                          <li class="sidebar__filter-btn active">
-                              <i class="fa-solid fa-globe"></i>
-                              <a href="#">Everything</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-chart-simple"></i>
-                              <a href="#">Productivity</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-suitcase"></i>
-                              <a href="#">Career Advice</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-brain"></i>
-                              <a href="#">AI/ML</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-brands fa-sourcetree"></i>
-                              <a href="#">Open Source</a>
-                          </li>
-                      </ul>
-          
-                      <hr>
-                      <!-- Second part  -->
-                      <ul class="sidebar__menu-second item-flex">
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-building"></i>
-                              <a href="#">Company</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-cube"></i>
-                              <a href="#">Releases</a>
-                          </li>
-                      </ul>
-          
-                      <hr>
-                      <!-- Third part  -->
-                      <ul class="sidebar__menu-third item-flex">
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-podcast"></i>
-                              <a href="#">Podcast</a>
-                          </li>
-                          <li class="sidebar__filter-btn">
-                              <i class="fa-solid fa-newspaper"></i>
-                              <a href="#">Newsletter</a>
-                          </li>
-                      </ul>
-                    </div>
-          
-                  <hr>
-                  <br>
-          
-                   <!-- This part is for news feed, or announcments  -->
-                  <article class="sidebar__card-info">
-                     <h4 class="sidebar__card-title ">Products</h4>
-          
-                     <article class="sidebar__card-sub1">
-                          <h4 class="sidebar__card-title1">QueryStack for Teams</h5>
-                          <p>Capture, share, & collaborate on knowledge internally.</p>
-                     </article>
-          
-                     <article class="sidebar__card-sub2">
-                      <h4 class="sidebar__card-title2">MATBOOT for Teams</h5>
-                      <p>Capture, share, & collaborate on knowledge internally.</p>
-                     </article>
-          
-                     <article class="sidebar__card-sub2">
-                      <h4 class="sidebar__card-title2">Frontend for Teams</h5>
-                      <p>Capture, share, & collaborate on knowledge internally.</p>
-                      </article>
-          
-                  </article>
-              </aside>
-
+                    <!-- Top part of the sidebar  -->
+                    <div id="sidebar">
+                        <!-- This top part has been divided into 3 parts for better layout and spacing  -->
+            
+                        <!-- First part  -->
+                        <ul class="sidebar__menu-first item-flex">
+                            <li class="sidebar__filter-btn active">
+                                <i class="fa-solid fa-globe"></i>
+                                <a href="#">Everything</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a href="#">Productivity</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <a href="#">Career Advice</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-brain"></i>
+                                <a href="#">AI/ML</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-brands fa-sourcetree"></i>
+                                <a href="#">Open Source</a>
+                            </li>
+                        </ul>
+            
+                        <hr>
+                        <!-- Second part  -->
+                        <ul class="sidebar__menu-second item-flex">
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-building"></i>
+                                <a href="#">Company</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-cube"></i>
+                                <a href="#">Releases</a>
+                            </li>
+                        </ul>
+            
+                        <hr>
+                        <!-- Third part  -->
+                        <ul class="sidebar__menu-third item-flex">
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-podcast"></i>
+                                <a href="#">Podcast</a>
+                            </li>
+                            <li class="sidebar__filter-btn">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <a href="#">Newsletter</a>
+                            </li>
+                        </ul>
+                      </div>
+            
+                    <hr>
+                    <br>
+            
+                     <!-- This part is for news feed, or announcments  -->
+                    <article class="sidebar__card-info">
+                       <h4 class="sidebar__card-title ">Products</h4>
+            
+                       <article class="sidebar__card-sub1">
+                            <h4 class="sidebar__card-title1">QueryStack for Teams</h5>
+                            <p>Capture, share, & collaborate on knowledge internally.</p>
+                       </article>
+            
+                       <article class="sidebar__card-sub2">
+                        <h4 class="sidebar__card-title2">MATBOOT for Teams</h5>
+                        <p>Capture, share, & collaborate on knowledge internally.</p>
+                       </article>
+            
+                       <article class="sidebar__card-sub2">
+                        <h4 class="sidebar__card-title2">Frontend for Teams</h5>
+                        <p>Capture, share, & collaborate on knowledge internally.</p>
+                        </article>
+            
+                    </article>
+                </aside>
             </div>
-            <div class="main-container col-md-10 col-sm-12 col-12" >
-                <!-- Middle and Right Division Container -->
-                <div class="row middle-right-container">
-                    <div class="middle_div col-md-8 col-12 ">
-                        <!-- Middle Division (Large) -->
 
-                        <div class="wrapper-middle">
-                          <div class="top-questions">
-                            Top Questions
-                          </div>
+            <main class="main-section">
+                <!-- main section goes here -->
+                <div class="wrapper-middle">
+                    <div class="top-questions">
+                      Top Questions
+                    </div>
 
-                          <div id="upperLinksContainer">
-                            <div class="sec1">
-                              <a href="" id="nav-links" class="active">
-                                Interesting
-                            </a>
-                            <a href="" id="nav-links">
-                              Bountied
-                            </a>
-                            <a href="" id="nav-links">
-                              Hot
-                            </a>
-                            <a href="" id="nav-links">
-                              Week
-                            </a>
-                            <a href="" id="nav-links">
-                              Month
-                            </a>
-                          </div>
-                          <div>
-                            <a href="#" class="blue-button">
-                              Ask Question
-                            </a>
-                          </div>
+                    <div id="upperLinksContainer">
+                      <div class="sec1">
+                        <a href=""  class="active nav-links">
+                          Interesting
+                      </a>
+                      <a href="" class="nav-links">
+                        Bountied
+                      </a>
+                      <a href="" class="nav-links">
+                        Hot
+                      </a>
+                      <a href="" class="nav-links">
+                        Week
+                      </a>
+                      <a href="" class="nav-links">
+                        Month
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="blue-button">
+                        Ask Question
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="question-wrapper">
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
                         </div>
-
-                        <div class="question-wrapper">
-                          <div class="questions-card">
-                            <section class="sec">
-                              <div class="question-title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
-                              </div>
-                              <div class="questions-explanation">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
-                              </div>
-                              <div class="lang_user">
-                                <div class="related-lang">
-                                  <div class="lang">PHP</div>
-                                  <div class="lang">Java</div>
-                                  <div class="lang">C++</div>
-                                </div>
-
-                                <div class="askedBy">
-                                  Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
-                                </div>
-
-                              </div>
-                            </section>
-                            <section class="icon-sec">
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  favorite
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  comment
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  visibility
-                                </a>
-                                <span>4</span>
-                              </div>
-      
-                            </section>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
                           </div>
 
-                          <div class="questions-card">
-                            <section class="sec">
-                              <div class="question-title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
-                              </div>
-                              <div class="questions-explanation">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
-                              </div>
-                              <div class="lang_user">
-                                <div class="related-lang">
-                                  <div class="lang">PHP</div>
-                                  <div class="lang">Java</div>
-                                  <div class="lang">C++</div>
-                                </div>
-
-                                <div class="askedBy">
-                                  Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
-                                </div>
-
-                              </div>
-
-                              
-                              
-                            </section>
-                            <section class="icon-sec">
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  favorite
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  comment
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  visibility
-                                </a>
-                                <span>4</span>
-                              </div>
-      
-                            </section>
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
                           </div>
-
-                          <div class="questions-card">
-                            <section class="sec">
-                              <div class="question-title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
-                              </div>
-                              <div class="questions-explanation">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
-                              </div>
-                              <div class="lang_user">
-                                <div class="related-lang">
-                                  <div class="lang">PHP</div>
-                                  <div class="lang">Java</div>
-                                  <div class="lang">C++</div>
-                                </div>
-
-                                <div class="askedBy">
-                                  Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
-                                </div>
-
-                              </div>
-
-                              
-                              
-                            </section>
-                            <section class="icon-sec">
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  favorite
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  comment
-                                </a>
-                                <span>4</span>
-                              </div>
-                              <div class="icon-value">
-                                <a href="#" class="material-symbols-outlined">
-                                  visibility
-                                </a>
-                                <span>4</span>
-                              </div>
-      
-                            </section>
-                          </div>
-
-
 
                         </div>
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
                         </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
                         
-                    </div>
-                    <div class="right-container col-md-4 col-12" >
-                        <!-- Right Division (Small) -->
-                        <div class="p-3">
-                            <p>Right Division (Small)</p>
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
                         </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
                     </div>
-                </div>
+
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                        
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+                    <div class="questions-card">
+                      <section class="sec">
+                        <div class="question-title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.
+                        </div>
+                        <div class="questions-explanation">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi illum esse, iste reiciendis, modi sit consequuntur repudiandae necessitatibus sequi incidunt itaque. Autem deserunt necessitatibus architecto corrupti perspiciatis dolorem officia.
+                        </div>
+                        <div class="lang_user">
+                          <div class="related-lang">
+                            <div class="lang">PHP</div>
+                            <div class="lang">Java</div>
+                            <div class="lang">C++</div>
+                          </div>
+
+                          <div class="askedBy">
+                            Asked by <a href="#" id="username">g.elvis</a> <span class="time">5hr ago</span>
+                          </div>
+
+                        </div>
+
+                        
+                        
+                      </section>
+                      <section class="icon-sec">
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            favorite
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            comment
+                          </a>
+                          <span>4</span>
+                        </div>
+                        <div class="icon-value">
+                          <a href="#" class="material-symbols-outlined">
+                            visibility
+                          </a>
+                          <span>4</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+
+
+                  </div>
+                  </div>
+            </main>
+
+            <div class="right-side-bar">
+                <!-- right sidebar goes here -->
+                <div class="module sidebar-related">
+                  <h4 id="h-related">Related</h4>
+                  <div class="related js-gps-related-questions" data-tracker="rq=3">
+                          <div class="spacer" data-question-id="38679735">
+                              <a href="https://stackoverflow.com/q/38679735?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">3</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/38679735/how-to-make-an-api-call-in-angular-2?rq=3" class="question-hyperlink">How to make an API call in Angular 2?</a>
+                          </div>
+                          <div class="spacer" data-question-id="44737428">
+                              <a href="https://stackoverflow.com/q/44737428?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/44737428/angular-2-http-get-observable?rq=3" class="question-hyperlink">Angular 2 http get observable</a>
+                          </div>
+                          <div class="spacer" data-question-id="46072281">
+                              <a href="https://stackoverflow.com/q/46072281?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/46072281/angular-4-observable-service-not-working-for-an-api-http-get?rq=3" class="question-hyperlink">Angular 4 Observable service not working for an api http get</a>
+                          </div>
+                          <div class="spacer" data-question-id="49620090">
+                              <a href="https://stackoverflow.com/q/49620090?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes default">3</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/49620090/angular-5-get-data-with-observable-and-httpclient-fetching-data-from-web-api?rq=3" class="question-hyperlink">Angular 5 GET data with Observable and HttpClient - Fetching data from Web API</a>
+                          </div>
+                          <div class="spacer" data-question-id="49857241">
+                              <a href="https://stackoverflow.com/q/49857241?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">1</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/49857241/consuming-a-rest-api-using-angular-observable?rq=3" class="question-hyperlink">Consuming a REST API using Angular Observable</a>
+                          </div>
+                          <div class="spacer" data-question-id="55441622">
+                              <a href="https://stackoverflow.com/q/55441622?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/55441622/how-to-make-a-get-request-from-api-with-ngrxangular-7?rq=3" class="question-hyperlink">How to make a GET request from API with ngrx?(Angular 7)</a>
+                          </div>
+                          <div class="spacer" data-question-id="56248297">
+                              <a href="https://stackoverflow.com/q/56248297?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">1</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/56248297/angular-7-httpclient-get-request-undefined-response?rq=3" class="question-hyperlink">Angular 7 HttpClient Get Request undefined response</a>
+                          </div>
+                          <div class="spacer" data-question-id="57583691">
+                              <a href="https://stackoverflow.com/q/57583691?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/57583691/angular-7-get-data-from-api?rq=3" class="question-hyperlink">Angular 7 Get Data From API</a>
+                          </div>
+                          <div class="spacer" data-question-id="58917169">
+                              <a href="https://stackoverflow.com/q/58917169?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/58917169/how-to-access-data-from-observables-in-angular-using-httpclient?rq=3" class="question-hyperlink">How to access data from observables in angular using httpClient?</a>
+                          </div>
+                          <div class="spacer" data-question-id="60729607">
+                              <a href="https://stackoverflow.com/q/60729607?rq=3" title="Question score (upvotes - downvotes)">
+                                  <div class="answer-votes answered-accepted default">0</div>
+                              </a>
+                              <a href="https://stackoverflow.com/questions/60729607/why-angular-application-not-able-to-get-http-response-data?rq=3" class="question-hyperlink">why angular application not able to get HTTP response data?</a>
+                          </div>
+                  </div>
+              </div>
             </div>
         </div>
+
+        <footer class="footer">
+           <div class="footer-container">
+          <div class="logo">
+            <a href="">
+              <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37">
+                <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                <path
+                  d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z"
+                  fill="#F48024"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-element">
+              <h5>QUERYSTACK</h5>
+              <ul>
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-element">
+              <h5>PRODUCTS</h5>
+              <ul>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Collectives</a></li>
+                <li><a href="#">Talent</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-element">
+              <h5>COMPANY</h5>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Work Here</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Cookie Settings</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-element">
+              <h5>QUERYSTACK NETWORK</h5>
+              <ul>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Culture & recreation</a></li>
+                <li><a href="#">Life & arts</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Professional</a></li>
+                <li><a href="#">Business</a></li><br>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Data</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+            <p>© <span class="copyright-date"></span> QueryStack Inc</p>
+          </div>
+        </div>
+        </footer>
+
     </div>
-  
-      </section>
-      <section class="footer">
 
-      </section>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
