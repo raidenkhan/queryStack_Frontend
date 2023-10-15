@@ -17,6 +17,7 @@
     --montserrat: 'Montserrat', sans-serif;
     --bordercolor: rgba(14,19,31,0.5);
     --blue-100: rgba(27, 152, 224, 0.20);
+    --blue-50: rgba(27, 152, 224, 0.10)rg
 }
 
 body{
@@ -35,6 +36,7 @@ nav{
     width: 100vw;
     background-color: var(--white);
     position: sticky;
+    z-index: 999;
     top: 0;
     left: 0;
 }
@@ -54,22 +56,77 @@ nav,.nav-container,nav section,.ask-question{
     justify-content: space-between;
     width: 100%;
     padding: 0 0.5rem;
-   
 }
 
 .nav-container section{
+    justify-content: center;
     gap: 1rem;
 }
 
-.nav-container section .hamburger{
-    width: 1rem;
-    height: 1rem;
+.nav-container section .hamburger svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* .hamburger{
+    margin: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+} */
+
+.hamburger svg{
+    fill: var(--rich-black);
+    filter: none;
+    -webkit-filter: none;
+    box-shadow: none;
+}
+
+.hamburger .line{
+    transition:
+    y 200ms ease-in-out 200ms,
+    rotate 200ms ease-in,
+    opacity 0ms 200ms;
+    transform-origin: center;
+}
+
+.hamburger[aria-expanded = "true"] .line{
+    transition:
+        y 200ms ease-in-out,
+        rotate 200ms ease-in 200ms,
+        opacity 0ms 200ms;
+}
+
+
+
+.hamburger[aria-expanded = "true"] :is(.top,.middle,.bottom){
+    y: 45;
+}
+.hamburger[aria-expanded = "true"] .top{
+   rotate:45deg;
+}
+.hamburger[aria-expanded = "true"] .bottom{
+    rotate:-45deg;
+    width: 80%;
+ }
+
+ .hamburger[aria-expanded = "true"] .middle{
+    opacity: 0;
+ }
+
+
+.nav-container section .hamburger svg path,
+.brand-name a svg path,
+.notification svg path,
+.search-icon svg path{
+    fill: var(--rich-black);
 }
 
 .brand-name a svg{
     width: 2rem;
-    
 }
+
 
 .nav-container .ask-question{
     display: none;
@@ -110,9 +167,10 @@ nav,.nav-container,nav section,.ask-question{
     width: 25.97px;
     height: 28.024px;
 }
-.left,.right{
+.right{
     display: none;
 }
+
 
 main{
     background-color: var(--cream);
@@ -138,6 +196,15 @@ main{
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
+    transition: background 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -ms-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+}
+
+.filters section a:hover{
+    background-color: var(--blue-50);
 }
 
 .active{
@@ -231,8 +298,88 @@ main{
     line-height: normal;
 }
 
+.wrapper{
+    position: relative;
+}
 
+.left{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    height: calc(100vh - 5rem);
+    padding: 2rem 1.5rem;
+    background-color: var(--white);
+    gap: 3rem;
+}
 
+.left a {
+    font-family: var(--montserrat);
+    font-size: 1.2rem;
+    color: var(--rich-black);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -ms-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.left .ele-container:hover{
+    background-color: var(--blue-100);
+}
+
+@media screen  and (max-width: 699px){
+
+    @keyframes left-in {
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+            -webkit-transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+    }
+
+    @keyframes left-out {
+        from{
+            opacity: 1;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+
+        to{
+            opacity: 0;
+            transform: translateX(-100px);
+            -webkit-transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+        }
+    }
+
+}
 
 
 
@@ -353,35 +500,9 @@ main{
         display: flex;
         flex-direction: column;
         position: sticky;
-        top: 5rem;
-        height: calc(100vh - 5rem);
-        padding: 2rem 1.5rem;
-        background-color: var(--white);
-        gap: 3rem;
+        
     }
-    .left a {
-        font-family: var(--montserrat);
-        font-size: 1.2rem;
-        color: var(--rich-black);
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        transition: background 200ms ease-in-out;
-        -webkit-transition: background 200ms ease-in-out;
-        -moz-transition: background 200ms ease-in-out;
-        -ms-transition: background 200ms ease-in-out;
-        -o-transition: background 200ms ease-in-out;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-}
-
-    .left .ele-container:hover{
-        background-color: var(--blue-100);
-    }
+    
     .filters .ask-question{
         display: none;
     }
@@ -435,7 +556,6 @@ main{
         top: 5rem;
         height: calc(100vh - 5rem);
         padding: 2rem 0.5rem;
-
         gap: 3rem;
     }
     .left a {
