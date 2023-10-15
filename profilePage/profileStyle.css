@@ -1,4 +1,10 @@
-@import url(./../hompage/style.css);
+@import url(./../new-design/style.css);
+:root{
+    --red:rgb(241, 23, 23);
+}
+.left{
+    z-index: 99999;
+}
 .wrapper{
   
     grid-template-columns: 20% 80%;
@@ -210,10 +216,13 @@ transition: all 200ms;
        
      
     }
+    .main-profile{
+        position: relative;
+    }
     main .user-pic{
         position: absolute;
         z-index: 5;
-        top: 80px;
+        top: -120px;
        
         
     }
