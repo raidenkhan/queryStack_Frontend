@@ -316,6 +316,7 @@ main{
     padding: 2rem 1.5rem;
     background-color: var(--white);
     gap: 3rem;
+    z-index: 5;
 }
 
 .left a {
