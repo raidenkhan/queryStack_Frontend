@@ -1,0 +1,626 @@
+/* Font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* Mobile devices first */
+:root{
+    --white:#fff;
+    --rich-black:#0E131F;
+    --rich-black-900: rgba(14,19,31,0.9);
+    --rich-black-800: rgba(14, 19, 31, 0.80);
+    --rich-black-750: rgba(14, 19, 31, 0.75);
+    --blue:#1B98E0;
+    --cream: #FAF1F1;
+    --poppins: 'Poppins', sans-serif;
+    --plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --bordercolor: rgba(14,19,31,0.5);
+    --blue-100: rgba(27, 152, 224, 0.20);
+    --blue-50: rgba(27, 152, 224, 0.10)rg
+}
+
+body{
+    background-color: var(--cream);
+
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--white);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+nav,.nav-container,nav section,.ask-question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Nav bar elements that do not appear on smaller screens */
+.brand-name a span,.search-bar{
+    display: none;
+
+}
+
+.nav-container{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.nav-container section{
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-container section .hamburger svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* .hamburger{
+    margin: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+} */
+
+.hamburger svg{
+    fill: var(--rich-black);
+    filter: none;
+    -webkit-filter: none;
+    box-shadow: none;
+}
+
+.hamburger .line{
+    transition:
+    y 200ms ease-in-out 200ms,
+    rotate 200ms ease-in,
+    opacity 0ms 200ms;
+    transform-origin: center;
+}
+
+.hamburger[aria-expanded = "true"] .line{
+    transition:
+        y 200ms ease-in-out,
+        rotate 200ms ease-in 200ms,
+        opacity 0ms 200ms;
+}
+
+
+
+.hamburger[aria-expanded = "true"] :is(.top,.middle,.bottom){
+    y: 45;
+}
+.hamburger[aria-expanded = "true"] .top{
+   rotate:45deg;
+}
+.hamburger[aria-expanded = "true"] .bottom{
+    rotate:-45deg;
+    width: 80%;
+ }
+
+ .hamburger[aria-expanded = "true"] .middle{
+    opacity: 0;
+ }
+
+
+.nav-container section .hamburger svg path,
+.brand-name a svg path,
+.notification svg path,
+.search-icon svg path{
+    fill: var(--rich-black);
+}
+
+.brand-name a svg{
+    width: 2rem;
+}
+
+
+.nav-container .ask-question{
+    display: none;
+}
+.ask-question{
+    width: 7rem;
+    height: 2.4rem;
+    background-color: var(--blue);
+    border-radius: 15px;
+    justify-content: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.ask-question a{
+    font-family: var(--montserrat);
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    font-size: 12px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.avatar img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.notification svg, .search-icon svg{
+    width: 25.97px;
+    height: 28.024px;
+}
+.right{
+    display: none;
+}
+
+
+main{
+    background-color: var(--cream);
+    padding: 0.5rem;
+    
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 2rem 1rem;
+}
+.filters section a {
+    color: rgba(14, 19, 31, 0.90);
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    transition: background 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -ms-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+}
+
+.filters section a:hover{
+    background-color: var(--blue-50);
+}
+
+.active{
+    background-color: var(--blue-100);
+}
+
+.ask-question:hover{
+    transition: opacity 200ms ease-in-out;
+    -webkit-transition: opacity 200ms ease-in-out;
+    -moz-transition: opacity 200ms ease-in-out;
+    -ms-transition: opacity 200ms ease-in-out;
+    -o-transition: opacity 200ms ease-in-out;
+    opacity: 0.85;
+}
+
+
+.feed-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feed-card{
+    background-color: var(--white);
+    width: 100%;
+    height: 12.5rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feed-card .personal-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    .name-date{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.name-date a{
+    color: rgba(14, 19, 31, 0.90);
+    font-size: 0.9rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.name-date span {
+    color: var(--rich-black-900);
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+.feed-card .question-title{
+    color: var(--rich-black-900);
+    font-family: var(--plus-jakarta);
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.feed-card  :is(.reaction-answers,.post-tags){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.feed-card .post-tags a{
+    color: var(--rich-black-800);
+    font-family: var(--poppins);
+    font-size: 0.8rem;
+}
+
+.feed-card .reaction-answers a{
+    color: var(--rich-black-800);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.left{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    height: calc(100vh - 5rem);
+    padding: 2rem 1.5rem;
+    background-color: var(--white);
+    gap: 3rem;
+}
+
+.left a {
+    font-family: var(--montserrat);
+    font-size: 1.2rem;
+    color: var(--rich-black);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -ms-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.left .ele-container:hover{
+    background-color: var(--blue-100);
+}
+
+@media screen  and (max-width: 699px){
+
+    @keyframes left-in {
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+            -webkit-transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+    }
+
+    @keyframes left-out {
+        from{
+            opacity: 1;
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+
+        to{
+            opacity: 0;
+            transform: translateX(-100px);
+            -webkit-transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 300px) {
+    .filters section a {
+        font-size: 0.6rem;
+    }
+
+    .ask-question{
+        width: 5rem;
+    }
+    
+    .ask-question a{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width:699px) {
+    
+    .nav-container{
+        padding: 0 1rem;
+    }
+    .search-icon,.hamburger{
+        display: none;
+    }
+    .brand-name a span,.search-bar{
+        display: block;
+    
+    }
+    .nav-container .ask-question{
+        display: flex;
+    }
+
+    .search-bar{
+        width: 18rem;
+        height: 2.5rem;
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar input{
+        width: 100%;
+        height: 100%;
+        border-radius: 64.5px;
+        border: 1px solid var(--bordercolor);
+        padding: 0 1.5rem;
+        
+    }
+    .search-bar input:focus{
+        outline: 0;
+        border: 1px solid rgba(14, 19, 31, 0.8);;
+    }
+
+    .search-bar svg{
+        position: absolute;
+        right: 1.5rem;
+        width: 20.012px;
+        height: 19.997px;
+        
+    }
+
+    .search-bar input::placeholder{
+        color: rgba(14, 19, 31, 0.70);
+        font-family: Montserrat;
+        font-size: 1rem;
+    }
+    .brand-name a svg{
+        display: none;
+        
+    }
+
+    .brand-name a{
+        text-decoration: none;
+        color: var(--rich-black);
+        font-family: var(--poppins);
+    }
+
+    .brand-name a span{
+        text-decoration: none;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 700;
+    }
+    .wrapper{
+        padding: 0 0rem;
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        
+    }
+    
+    .filters .ask-question{
+        display: none;
+    }
+
+    .filters section a {
+        font-size: 1rem;
+    }
+
+    .feed-container{
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .feed-card{
+        background-color: var(--white);
+        width: 90%;
+        border-radius: 15px;
+        gap: 0.8rem;
+        padding: 1rem 2rem;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    .feed-card  :is(.reaction-answers,.post-tags), .feed-card .question-title{
+        padding: 0 2rem;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    body{
+        background-color: var(--white);
+    }
+    .wrapper{
+        padding: 0 5rem;
+        grid-template-columns: 20% 55% 25%;
+    }
+    .nav-container{
+        padding: 2rem 5rem;
+    }
+    .search-bar{
+        width: 20rem;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 5rem;
+        height: calc(100vh - 5rem);
+        padding: 2rem 0.5rem;
+        gap: 3rem;
+    }
+    .left a {
+        font-family: var(--montserrat);
+        font-size: 1.2rem;
+        color: var(--rich-black);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .right{
+        display: flex;
+        padding: 1rem;
+        height: 100vh
+    }
+
+    .right .right-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .right .recent-post{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .right .recent-post span{
+        color: var(--rich-black-800);
+        font-family: Plus Jakarta Sans;
+        font-size: 0.85rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .right .recent-post .answers{
+        color: var(--rich-black-750);
+        font-family: var(--poppins);
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+}
+
+@media screen  and (min-width:1400px){
+
+    nav{
+        justify-content: center;
+    }
+    .nav-container, .wrapper{
+        padding: 0 5rem;
+        width: 1440px;
+    }
+    .wrapper{
+        margin: 0 auto;
+    }
+}
