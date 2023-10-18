@@ -1,6 +1,7 @@
 /* Styles for the Post Page */
 @import url("new_design.css");
 @import url("gallery.css");
+@import url("popup.css");
 
 /* @import url("../../new-design/style.css"); */
 
@@ -34,6 +35,9 @@
   .profile-text {
     display: flex;
     flex-direction: column;
+
+    font-family: var(--poppins);
+
   }
   
   .profile-name {
@@ -45,6 +49,8 @@
   .profile-date {
     font-size: 14px;
     margin: 0;
+    font-family: var(--poppins);
+
   }
   
   .feed-title {

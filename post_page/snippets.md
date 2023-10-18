@@ -19,3 +19,19 @@ HTML:
                   <img src="img/image-6.jpg" alt="Gallery image 6" class="gallery__img">
                 </div>
             </div>
+
+
+
+
+
+ <div class="image-gallery">
+                    <div class="image-box">
+                    <img src="img/img-5.jpg" alt="img.jpg" />
+                    </div>
+                    <div class="image-box">
+                    <img src="img/img-2.jpg" alt="img.jpg" />
+                    </div>
+                    <div class="image-box">
+                    <img src="img/img-12.jpg" alt="img.jpg" />
+                    </div>
+                </div> 
