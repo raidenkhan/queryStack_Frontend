@@ -1,5 +1,5 @@
 // Get all the image elements within the gallery
-const imgs = document.querySelectorAll('img');
+const imgs = document.querySelectorAll('.image-gallery .image-box img');
 
 // Add an event listener to each image element
 imgs.forEach(img => {
