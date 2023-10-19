@@ -1,0 +1,254 @@
+/* Styles for the Post Page */
+@import url("new_design.css");
+@import url("gallery.css");
+@import url("popup.css");
+
+/* @import url("../../new-design/style.css"); */
+
+/* -------------------CODE FOR POST-------------------------- */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--poppins);
+
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .profile-date {
+    font-size: 14px;
+    margin: 0;
+    font-family: var(--poppins);
+
+  }
+  
+  .feed-title {
+    font-family: var(--poppins);
+    font-weight: bold;
+    font-size: 2.5ch;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  
+  .text-container {
+    font-family: var(--plus-jakarta);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .reaction-container {
+    font-family: var(--plus-jakarta);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .reaction-text {
+    font-family: var(--plus-jakarta);
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .reaction-tags {
+    display: flex;
+    font-weight: bold;
+  }
+  
+  .reaction-tag {
+    margin-right: 10px;
+  }
+  
+  .description-title {
+    font-family: var(--poppins);
+
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .description-text {
+    margin: 0;
+    font-family: var(--plus-jakarta);
+
+  }
+  
+  .answer-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: var(--poppins);
+
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .card-user {
+    display: flex;
+    width: auto;
+    background-size: contain;
+  }
+  .card-user img {
+    width: 50px;
+    height: 50px;
+  }
+  .card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--plus-jakarta);
+
+  }
+  
+  .card-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    font-family: var(--poppins);
+
+  }
+  
+  .card-date {
+    font-size: 14px;
+    margin: 0;
+    font-family: var(--poppins);
+
+  }
+  
+  .card-description {
+    margin: 0;
+    font-family: var(--poppins);
+
+  }
+  
+  .message-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .message-input {   
+    font-size: 18px;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+
+    height: 180px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-color: rgba(100, 175, 245, 0.281);
+
+
+  }
+  .message-input:focus {
+    box-shadow: 0 0 0 2px rgba(64, 64, 85, 0.342);
+  }
+  .message-input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .button__gap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .message-button {
+    background-color: var(--blue);
+    width: 12rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 17.5px;
+    font-weight: bold;
+  }
+  
+  .message-button:hover {
+    background-color: var(--blue-100);
+  }
+
+  .add-image {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--rich-black-750);
+  }
+
+/* body::-webkit-scrollbar {
+  width: 0px;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
