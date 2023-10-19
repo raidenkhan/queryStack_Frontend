@@ -22,16 +22,18 @@
 
 body{
     background-color: var(--cream);
-
+    max-width: 1280px;
+    margin: 0 auto;
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
     overflow-x: hidden;
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     text-decoration: none;
 }
 
@@ -229,17 +231,25 @@ main{
 .feed-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
 .feed-card{
     background-color: var(--white);
-    width: 100%;
-    height: 12.5rem;
+    width: 95%;
+    border-radius: 5px;
+    min-height: 12.5rem;
+    height: auto;
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .feed-card .personal-info{
@@ -386,26 +396,6 @@ main{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media  screen and (max-width: 300px) {

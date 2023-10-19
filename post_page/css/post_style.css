@@ -1,6 +1,7 @@
 /* Styles for the Post Page */
 @import url("new_design.css");
-@import url("gallery.css");
+/* @import url("gallery.css"); */
+@import url("gallery_2.css");
 @import url("popup.css");
 
 /* @import url("../../new-design/style.css"); */
@@ -218,19 +219,49 @@
   }
   .message-button {
     background-color: var(--blue);
-    width: 12rem;
     color: white;
     border: none;
+    outline: none;
     border-radius: 10px;
-    padding: 1rem 2rem;
+    padding: 0.6rem 1.3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 17.5px;
     font-weight: bold;
+    width: fit-content;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .message-button {
+      font-size: 14px;
+      padding: 0.4rem 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .message-button {
+      font-size: 12px;
+      padding: 0.3rem 0.7rem;
+    }
+  }
+  
+  @keyframes zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
   }
   
   .message-button:hover {
     background-color: var(--blue-100);
+    color: var(--blue);
+    animation: zoom-out 2s ease infinite;
   }
 
   .add-image {
