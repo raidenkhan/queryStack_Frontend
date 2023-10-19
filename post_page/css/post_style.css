@@ -72,11 +72,10 @@
   
   .reaction-container {
     font-family: var(--plus-jakarta);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .reaction-text {
@@ -92,21 +91,24 @@
   
   .reaction-tag {
     margin-right: 10px;
+    color: var(--rich-black-800);
+    font-family: var(--poppins);
+    font-size: 0.8rem;
+    font-weight: 500;
   }
   
   .description-title {
     font-family: var(--poppins);
-
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
-  .description-text {
+  /* .description-text {
     margin: 0;
     font-family: var(--plus-jakarta);
 
-  }
+  } */
   
   .answer-title {
     font-weight: bold;
@@ -163,10 +165,14 @@
 
   }
   
-  .card-description {
+  .card-description,.description-text{
     margin: 0;
-    font-family: var(--poppins);
-
+    font-weight: 400;
+    color: rgba(14, 19, 31, 0.85);
+    font-family: var(--plus-jakarta);
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5rem;
   }
   
   .message-form {
@@ -203,6 +209,7 @@
   }
   .message-input::placeholder {
     opacity: 0.5;
+    font-family: var(--plus-jakarta);
   }
   
   .button__gap {
