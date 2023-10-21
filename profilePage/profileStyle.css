@@ -251,5 +251,9 @@ transition: all 200ms;
     .user_posts{
         margin-top: 2em;
     }
-    
+    .action_btns  button{
+        font-size: 5vw!important;
+        
+
+    }
 }
