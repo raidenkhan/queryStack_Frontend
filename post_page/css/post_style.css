@@ -176,99 +176,143 @@
     line-height: 1.5rem;
   }
   
-  .message-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .message-input {   
-    font-size: 18px;
-    border: none;
-    overflow: auto;
-    outline: none;
+/* Your CSS code goes here */
+.message-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+.message-input {   
+  font-size: 18px;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  height: 180px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-color: rgba(100, 175, 245, 0.281);
+}
 
-    resize: none; /*remove the resize handle on the bottom right*/
+.message-input:focus {
+  box-shadow: 0 0 0 2px rgba(64, 64, 85, 0.342);
+}
 
-    height: 180px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    resize: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-color: rgba(100, 175, 245, 0.281);
+.message-input::placeholder {
+  opacity: 0.5;
+  font-family: var(--plus-jakarta);
+}
 
+.button__gap {
+  display: flex;
+  justify-content: space-between;
+}
 
-  }
-  .message-input:focus {
-    box-shadow: 0 0 0 2px rgba(64, 64, 85, 0.342);
-  }
-  .message-input::placeholder {
-    opacity: 0.5;
-    font-family: var(--plus-jakarta);
-  }
-  
-  .button__gap {
-    display: flex;
-    justify-content: space-between;
-  }
+.message-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 17.5px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+@media screen and (max-width: 600px) {
   .message-button {
-    background-color: var(--blue);
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    padding: 0.6rem 1.3rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 17.5px;
-    font-weight: bold;
-    width: fit-content;
-    
+    font-size: 14px;
+    padding: 0.4rem 0.9rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    .message-button {
-      font-size: 14px;
-      padding: 0.4rem 0.9rem;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .message-button {
-      font-size: 12px;
-      padding: 0.3rem 0.7rem;
-    }
-  }
-  
-  @keyframes zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.2, 1.2);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-  
-  .message-button:hover {
-    background-color: var(--blue-100);
-    color: var(--blue);
-    animation: zoom-out 2s ease infinite;
-  }
+}
 
-  .add-image {
-    background-color: transparent;
-    border: 1px solid var(--blue);
-    color: var(--rich-black-750);
+@media screen and (max-width: 400px) {
+  .message-button {
+    font-size: 12px;
+    padding: 0.3rem 0.7rem;
   }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.message-button:hover {
+  background-color: var(--blue-100);
+  color: var(--blue);
+  animation: zoom-out 2s ease infinite;
+}
+
+.add-image {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: var(--rich-black-750);
+}
+
+.hashtag-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.hashtag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hashtag-list li {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: var(--blue);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.hashtag-input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-color: rgba(100, 175, 245, 0.281);
+}
+
+.hashtag-input:focus {
+  box-shadow: 0 0 0 2px rgba(64, 64, 85, 0.342);
+}
+
+.hashtag-input::placeholder {
+  opacity: 0.5;
+  font-family: var(--plus-jakarta);
+}
 
 /* body::-webkit-scrollbar {
   width: 0px;
